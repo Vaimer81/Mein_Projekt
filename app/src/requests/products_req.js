@@ -1,8 +1,8 @@
 import { loadProductsByCategoryAction } from "../store/reducers/productsByCategoryReducer";
 
-export const getProductsByCategory = (category) => {
+export const getProductsByCategory = (id) => {
   return (dispatch) => {
-    fetch(`https://fakestoreapi.com/products/category/${category}`)
+    fetch(`http://localhost:3333/products/${id}`)
       .then((res) => res.json())
       .then((json) => dispatch(loadProductsByCategoryAction(json)));
   };
