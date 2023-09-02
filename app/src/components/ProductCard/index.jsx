@@ -1,11 +1,11 @@
 import React from 'react'
-
-export default function ProductCard({ image, title,  }) {
+import s from './index.module.css'
+ 
+export default function ProductCard({ id, title, image}) {
   return (
-    <div>
-      <img src={image} alt={title} />
-      <p>{ title }</p>
-      
+    <div className={s.product_card}>
+        <img src={`http://localhost:3333${image}`} alt={title} />
+        <p>{ title }</p>       
     </div>
   )
 }

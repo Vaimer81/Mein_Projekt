@@ -1,13 +1,13 @@
 .category_card {
 	max-width: 1440px;
-		min-width: 523px;
-		min-height: 100%;
-		margin: 0 auto;
-		padding: 30px;
-		/* border: 1px solid rgb(231, 231, 231); */
-		display: flex;
-		flex-direction: column;
-		
+	min-width: 523px;
+	min-height: 100%;
+	margin: 0 auto;
+	padding: 30px;
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+
 }
 
 .category_card:hover {
@@ -16,6 +16,7 @@
 }
 
 a {
-	text-decoration:center;
-	color: black;
+	font-size: 25px;
+		font-weight: bold;
+		color: #333;
 }
