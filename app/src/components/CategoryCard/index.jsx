@@ -9,9 +9,9 @@ export default function CategoryCard({id, title, image }) {
 	return (
 	 <Link to={`/categories/${id}`}>
 			<div className={s.category_card}>
-				<h3>{title}</h3>
-		  <img src={`http://localhost:3333${image}`} alt={title} />
 				
+		  <img src={`http://localhost:3333${image}`} alt={title} />
+				<h3>{title}</h3>
 			</div>
 			</Link>
   )
