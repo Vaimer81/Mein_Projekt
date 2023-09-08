@@ -1,21 +1,16 @@
 .nav_menu {
-	background-color: rgb(84, 246, 81);
-	display: flex;
-	justify-content: center;
-	gap: 40px;
-	font-size: 25px;
-	padding: 20px;
-}
-
-.nav_menu a {
-	text-decoration: none;
-	color: white;
-}
-
-/* .nav_menu a:last-child {
-  color: yellow;
-}
-
-.nav_menu a:nth-child(3){
-  color: pink;
-} */
+    background-color: rgb(56, 205, 86);
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+    font-size: 25px;
+    padding: 20px;
+  }
+  
+  .nav_menu>a:last-child {
+  	position: absolute;
+  	top: 20px;
+  	/* Располагаем элемент в верхнем краю */
+  	right: 30px;
+  	/* Располагаем элемент в правом краю */
+  }
