@@ -30,15 +30,19 @@ function App() {
   return (
     <div>
       <NavMenu />
-      <Routes>
-        <Route path='/' element={<MainPage />} />
-        <Route path='/categories' element={<AllCategoriesPage />} />
-        <Route path='/categories/:id' element={<ProductsByCategoryPage />} />
-        <Route path='/products' element={<AllProductsPage />} />
-        <Route path='/products/:id' element={<SingleProductPage />} />
-        <Route path='/cart' element={<CartPage />} />
-        <Route path='*' element={<NotFoundPage />} />
-      </Routes>      
+		  <Routes>
+			  
+        {/* ДОМАШНЯЯ СТРАНИЦА */}
+			  <Route path="/" element={<MainPage />} />
+			  
+
+        <Route path="/categories" element={<AllCategoriesPage />} />
+        <Route path="/categories/:id" element={<ProductsByCategoryPage />} />
+        <Route path="/products" element={<AllProductsPage />} />
+        <Route path="/products/:id" element={<SingleProductPage />} />
+        <Route path="/cart" element={<CartPage />} />
+        <Route path="*" element={<NotFoundPage />} />
+      </Routes>
       <Footer />
     </div>
   );
