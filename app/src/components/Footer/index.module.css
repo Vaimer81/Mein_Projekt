@@ -1,6 +1,20 @@
-.footer {
+.google {
     background-color: gray;
     padding: 4px 10px;
     color: white;
     font-size: 25px;
   }
+.h5{
+	height: 40px;
+		display: flex;
+		justify-content: center;
+		gap: 20px;
+		align-items: center;
+		background-color: #06d945;
+		position: fixed;
+		width: 100%;
+		left: 0;
+		bottom: 0;
+}
+
+ 
