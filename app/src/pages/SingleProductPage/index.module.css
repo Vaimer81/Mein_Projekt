@@ -27,7 +27,7 @@
   }
   
   .product_item > div p:last-child {
-    background-color: green;
+    background-color: rgb(44, 253, 44);
     color: white;
     border-radius: 10px;
     padding: 15px;

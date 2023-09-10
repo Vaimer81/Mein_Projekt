@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import { getSingleProduct } from '../../request/products_req' 
 import { useParams } from 'react-router-dom'
 import s from './index.module.css'
+import { addToCartAction } from '../../store/reducer/cartReducer'
 
 export default function SingleProductPage() {
   const { id } = useParams()
@@ -26,8 +27,13 @@ export default function SingleProductPage() {
         <p>Description: {description}</p>
         <p>Price: {price}$</p>  
         <p>Discount: {discont_price}</p>      
-       
+         <div 
+        onClick={() => dispatch(addToCartAction({ id, title, price }))}
+      >
+        Add to cart
       </div>
+		  </div>
+		
     </div>
   )
 }
