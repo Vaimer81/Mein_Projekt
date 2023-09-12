@@ -1,6 +1,6 @@
 import { loadAllProductsAction } from "../store/reducer/allProductsReducer"
-import { loadProductsByCategoryAction } from "../store/reducer/productsByCategoryReducer"
-import { loadSingleProductAction } from "../store/reducer/singleProductReducer"
+import { loadProductsByCategoryAction } from "../store/reducer/productsByCategoryReducer";
+import { loadSingleProductAction } from "../store/reducer/singleProductReducer";
 
 export const getProductsByCategory = (id) => {
   return dispatch => {

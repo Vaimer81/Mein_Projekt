@@ -1,0 +1,18 @@
+.card {
+	border: 2px solid pink;
+	padding: 15px;
+	margin: 10px 0;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.card button {
+	background-color: green;
+	color: white;
+	cursor: pointer;
+	padding: 10px;
+	border: none;
+	margin: 0 5px;
+	border-radius: 7px;
+}

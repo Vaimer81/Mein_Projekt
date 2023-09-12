@@ -1,12 +1,13 @@
 import React from 'react'
-import Contener from '../../components/Cart/Contener'
+import Cart from '../../components/Cart'
+
 
 
 
 export default function CartPage() {
   return (
     <div>
-		  <Contener />
+		  <Cart />
 		  
     </div>
   )

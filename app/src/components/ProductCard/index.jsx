@@ -4,19 +4,30 @@ import { Link } from 'react-router-dom'
 import { useDispatch } from 'react-redux';
 import { addToCartAction } from '../../store/reducer/cartReducer';
 
-export default function ProductCard({ id, title, image, price }) {
+export default function ProductCard({ id, title,discont_price, image, price }) {
+	
 	const dispatch = useDispatch();
   return (
     
-	  <div className={s.product_card}>
+	  <div className={s.card_item}>
 		  <Link to={`/products/${id}`}>
+			  <div className={s.card}> 
        <img src={`http://localhost:3333${image}`} alt={title} />
-        <p>{ title }</p>
-        <p>{ price }$</p>
+        
+				   <p>Discount: {discont_price}$</p> 
+				  <p>{price}$</p>
+				 
+				   <p>{ title }</p>
+        </div>
       </Link>
-       <span onClick={()=>dispatch(addToCartAction({id,title,image,price}))}>  cart<i class="fa-solid fa-cart-plus"></i></span>
+       <div 
+        className={s.add_btn}
+        onClick={() => dispatch(addToCartAction({ id, image, title, price }))}
+      >
+        Add to cart
+      </div>
     </div>
-    
+   
   )
 }
 
