@@ -20,7 +20,7 @@ export const decrementCountAction = (payload) => ({
 export const clearCartAction = () => ({ type: CLEAR_CART });
 
 const checkProduct = (state, payload) => {
-  const productInCart = state.find((el) => el.id === payload.id);
+  const productInCart = state.find((el) => el.id === +payload.id);
   if (!productInCart) {
     return [...state, { ...payload, count: 1 }];
   } else {

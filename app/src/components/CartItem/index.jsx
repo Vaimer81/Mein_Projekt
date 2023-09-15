@@ -4,14 +4,16 @@ import { useDispatch } from 'react-redux'
 import { decrementCountAction, deleteFromCartAction, incrementCountAction } from '../../store/reducer/cartReducer';
 
 
-export default function CartItem({ id, title, price, count }) {
+export default function CartItem({ id, title, price, count, image,discont_price}) {
 
   const dispatch = useDispatch();
 
   return (
-    <div className={s.card}>
+	  <div className={s.card}>
+		  <img src={`http://localhost:3333${image}`} alt={title} />
       <p>{ title }</p>
-      <p>{ price * count }$</p>
+		  <p>Price:{price * count}$</p>
+		  <p>Discount: { discont_price }$</p>
       <p>{ count }</p>
 
       <div>

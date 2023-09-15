@@ -1,25 +1,29 @@
 .nav_menu {
-    background-color: rgb(213, 229, 216);
-    display: flex;
-    justify-content: center;
-    gap: 40px;
-    font-size: 25px;
-    padding: 20px;
-  }
-  
-  .nav_menu>a:last-child {
-  	position: absolute;
-  	top: 20px;
-  	/* Располагаем элемент в верхнем краю */
-  	right: 30px;
-  	/* Располагаем элемент в правом краю */
-  }
+	background-color: rgb(213, 229, 216);
+		display: flex;
+		justify-content: center;
+		gap: 40px;
+		font-size: 25px;
+		padding: 20px;
+}
 
-	    .nav_menu img {
-			width: 50px;
-			position: absolute;
-	    	top: 8px;
-	    	/* Располагаем элемент в верхнем краю */
-			left: 30px;;
-	    	/* Располагаем элемент в левому краю */
-	    }
+
+
+ .nav_menu>a:last-child {
+ 	position: absolute;
+ 	top: 20px;
+ 	/* Располагаем элемент в верхнем краю */
+ 	right: 30px;
+ 	/* Располагаем элемент в правом краю */
+ }
+
+
+.nav_menu img {
+	width: 50px;
+	position: absolute;
+	top: 8px;
+	/* Располагаем элемент в верхнем краю */
+	left: 30px;
+	;
+	/* Располагаем элемент в левому краю */
+}

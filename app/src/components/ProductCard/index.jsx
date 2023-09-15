@@ -16,13 +16,12 @@ export default function ProductCard({ id, title,discont_price, image, price }) {
         
 				   <p>Discount: {discont_price}$</p> 
 				  <p>{price}$</p>
-				 
-				   <p>{ title }</p>
+				  <p>{ title }</p>
         </div>
       </Link>
        <div 
         className={s.add_btn}
-        onClick={() => dispatch(addToCartAction({ id, image, title, price }))}
+        onClick={() => dispatch(addToCartAction({ id, image, title, price, discont_price }))}
       >
         Add to cart
       </div>
