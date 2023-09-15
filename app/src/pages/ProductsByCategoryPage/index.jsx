@@ -1,8 +1,9 @@
-import React, { useEffect } from 'react'
+
 import { useDispatch, useSelector } from 'react-redux'
 import { getProductsByCategory } from '../../request/products_req';
 import ProductsContainer from '../../components/ProductsContainer';
 import { useParams } from 'react-router-dom';
+import { useEffect } from 'react';
 
 
 export default function ProductsByCategoryPage() {

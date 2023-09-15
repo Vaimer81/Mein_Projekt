@@ -14,9 +14,10 @@ export default function ProductCard({ id, title,discont_price, image, price }) {
 			  <div className={s.card}> 
        <img src={`http://localhost:3333${image}`} alt={title} />
         
-				   <p>Discount: {discont_price}$</p> 
-				  <p>{price}$</p>
-				  <p>{ title }</p>
+				  {discont_price && <p>Discount: {discont_price}$</p>}
+				  
+          {!discont_price && <p>Price:{price}$</p>}
+          <p>{title}</p>
         </div>
       </Link>
        <div 
