@@ -18,7 +18,7 @@ export default function ProductCard({ id, title,discont_price, image, price }) {
 				  
 				  {!discont_price && <p>Price: {price}$</p>}
 				  
-          <p>{title}</p>
+          <p>{title}</p> 
         </div>
       </Link>
        <div 

@@ -11,15 +11,12 @@ export default function Cart() {
 
   const dispatch = useDispatch();
 
- // Вычисляем общую сумму корзины с учетом скидок
-	
-	const total = cart_state.reduce((acc, { price, discont_price, count }) => {
-	  
-    // Если есть скидка (discont_price), используем ее вместо обычной цены
-	
-    const itemPrice = discont_price ? discont_price : price;
-    return acc + itemPrice * count;
+  const total = cart_state.reduce((acc, { price, discont_price, count }) => {
+	// Если есть скидка (discont_price) и она больше 0, используем ее, иначе используем обычную цену
+	const itemPrice = discont_price && discont_price > 0 ? discont_price : price;
+	return acc + itemPrice * count;
   }, 0);
+
 
   return (
     <div>
