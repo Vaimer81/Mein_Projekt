@@ -46,3 +46,8 @@
 .card_item:hover .add_btn {
 	visibility: visible;
 }
+
+.discounted-price {
+	text-decoration: line-through; /* Перечеркивание текста */
+	color: #999; /* Цвет для перечеркнутой цены (по вашему выбору) */
+  }

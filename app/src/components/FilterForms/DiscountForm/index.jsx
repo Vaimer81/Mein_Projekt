@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { useDispatch } from 'react-redux'
 import { getDiscountProductsAction } from '../../../store/reducer/allProductsReducer'
 
+
 export default function DiscountForm() {
     const dispatch = useDispatch()
 
@@ -14,7 +15,7 @@ export default function DiscountForm() {
 // console.log(checkboxChecked);
 
   return (
-    <div>
+    <div >
         <label>
             <p>Discounted items</p>
             <input type='checkbox' checked={checkboxChecked} onChange={handleChange} onClick={get_discount_products}/>

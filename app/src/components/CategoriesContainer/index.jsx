@@ -10,7 +10,7 @@ export default function CategoriesContainer() {
 	const categories_state = useSelector(state => state.categories);
 
   return (
-	<div className={s.container}>
+	<div className={s.container}> 
 		{
         	categories_state.map(el => <CategoryCard key={el.id} {...el} />)
 	  	}

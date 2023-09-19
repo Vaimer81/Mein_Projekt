@@ -14,11 +14,16 @@ export default function ProductCard({ id, title,discont_price, image, price }) {
 			  <div className={s.card}> 
        <img src={`http://localhost:3333${image}`} alt={title} />
         
-				  {discont_price && <p>Discount: {discont_price}$</p>}
-				  
-				  {!discont_price && <p>Price: {price}$</p>}
-				  
-          <p>{title}</p> 
+	   {discont_price && discont_price > 0 ? (
+            <p>
+              Discount:{discont_price}$
+			  <br/>
+			  Price:<span className={s['discounted-price']}>{price}$</span>
+            </p>
+          ):(
+            <p>Price:{price}$</p>
+          )}
+          <p>{title}</p>
         </div>
       </Link>
        <div 
