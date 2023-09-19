@@ -1,29 +1,43 @@
 .nav_menu {
-	background-color: rgb(213, 229, 216);
-		display: flex;
-		justify-content: center;
-		gap: 40px;
-		font-size: 25px;
-		padding: 20px;
+    background-color: white;
+    display: flex;
+    /* justify-content: space-between; */
+    align-items: center;  
+    gap: 40px;
+    padding: 40px; 
+      
+    font-size: 16px;   
+    width: 1384px;
+    height: 72px;
+}
+
+.nav_menu a {
+    text-decoration: none;
+    color: black;
+   
+}
+
+.nav_menu :first-child {            
+    margin-left: 50px;
 }
 
 
+.nav_menu :nth-child(2) {
+    background-color: #339933;
+    color: white;
+    text-align: center;
+    border-radius: 10px;
+    padding: 14px ;
+    width: 125px;   
+    height: 49px; 
+    margin-left: 50px;   
+      
+}
 
- .nav_menu>a:last-child {
- 	position: absolute;
- 	top: 20px;
- 	/* Располагаем элемент в верхнем краю */
- 	right: 30px;
- 	/* Располагаем элемент в правом краю */
- }
+.nav_menu :nth-child(3) {
+    margin-left: 450px;
+}
 
-
-.nav_menu img {
-	width: 50px;
-	position: absolute;
-	top: 8px;
-	/* Располагаем элемент в верхнем краю */
-	left: 30px;
-	;
-	/* Располагаем элемент в левому краю */
+.nav_menu :nth-child(5) {
+    margin-left:150px;
 }

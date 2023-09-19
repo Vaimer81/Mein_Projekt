@@ -28,13 +28,11 @@ function App() {
 
   
   return (
-    <div>
+    <div className="app_container">
       <NavMenu />
-		  <Routes>
-			  
+      <Routes>
         {/* ДОМАШНЯЯ СТРАНИЦА */}
-			  <Route path="/" element={<MainPage />} />
-			  
+        <Route path="/" element={<MainPage />} />
 
         <Route path="/categories" element={<AllCategoriesPage />} />
         <Route path="/categories/:id" element={<ProductsByCategoryPage />} />

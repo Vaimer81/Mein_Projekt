@@ -13,7 +13,7 @@ export default function CartItem({ id, title, price, count, image,discont_price}
 		  <img src={`http://localhost:3333${image}`} alt={title} />
       <p>{ title }</p>
 		  <p>Price:{price * count}$</p>
-		  <p>Discount: { discont_price }$</p>
+		  <p>Discount: { discont_price * count}$</p>
       <p>{ count }</p>
 
       <div>

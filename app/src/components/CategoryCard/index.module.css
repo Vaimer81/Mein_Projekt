@@ -2,15 +2,22 @@
 .category_card {
 	width: 250px;
 	height: 350px;
-	margin: 0 auto;
-	padding: 30px;
+	margin: 0 auto;	
 	display: flex;
-	flex-direction: column;	
+	flex-direction: column;
+  justify-content: center;	
 }
 
 
 .category_card img {
-	height: 150px;
-	width: 150px;
+	height: 250px;
+	width: 250px;
 	border-radius: 50%;
+ 
+  
+}
+
+h3 {
+  text-align: center;
+  margin-top: 10px;
 }
