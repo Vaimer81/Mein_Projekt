@@ -1,6 +1,7 @@
 import React from 'react'
 import { useDispatch } from 'react-redux'
 import { filterProductsAction } from '../../../store/reducer/allProductsReducer'
+import s from '../index.module.css'
 
 export default function FilterForm() {
 
@@ -15,11 +16,12 @@ export default function FilterForm() {
     }
 
   return (
-    <form onSubmit={submit}>
-        <p> Price </p>
-        <input type='number' placeholder='min' name='min'/>
+    <form className={s.filter} onSubmit={submit}>
+        <p> Price
+     <input type='number' placeholder='min' name='min'/>
         <input type='number' placeholder='max' name='max'/>
         <button> Filter </button>
+		</p> 
     </form>
   )
 }

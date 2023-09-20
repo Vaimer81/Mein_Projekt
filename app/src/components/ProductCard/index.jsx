@@ -7,6 +7,7 @@ import { addToCartAction } from '../../store/reducer/cartReducer';
 export default function ProductCard({ id, title,discont_price, image, price }) {
 	
 	const dispatch = useDispatch();
+	const countDiscont =  Math.round(discont_price ? ((price - discont_price ) / price * 100) : 0)
   return (
     
 	  <div className={s.card_item}>
@@ -15,14 +16,14 @@ export default function ProductCard({ id, title,discont_price, image, price }) {
        <img src={`http://localhost:3333${image}`} alt={title} />
         
 	   {discont_price && discont_price > 0 ? (
-            <p>
-              Discount:{discont_price}$
+            <p>Discount:{discont_price}$
 			  <br/>
 			  Price:<span className={s['discounted-price']}>{price}$</span>
             </p>
           ):(
             <p>Price:{price}$</p>
           )}
+		  <p>{ countDiscont}%</p>
           <p>{title}</p>
         </div>
       </Link>

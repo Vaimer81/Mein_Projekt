@@ -1,13 +1,26 @@
-.form-container {
-	display: flex; /* Устанавливаем режим flex для контейнера */
-	gap: 20px; /* Расстояние между формами */
+
+
+.sort select{
+	float: right;
+	margin-top: -113px;
+	border: 3px solid black;
+	
+
+}
+  .discount{
+	
+	margin-top: -11px;
   }
   
-  .form {
-	flex: 1; /* Распределение доступного пространства между формами */
-	border: 1px solid #ccc;
-	padding: 10px;
-  }
   
-  /* Дополнительные стили для форм, если необходимо */
+  
+  
+  
+  
+  
+  
+  
+  
+  
+  
   

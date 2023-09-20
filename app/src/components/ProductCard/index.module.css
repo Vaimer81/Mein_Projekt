@@ -51,3 +51,11 @@
 	text-decoration: line-through; /* Перечеркивание текста */
 	color: #999; /* Цвет для перечеркнутой цены (по вашему выбору) */
   }
+
+  .card p:nth-child(3) {
+    text-align: center;
+    margin: 4px 0;  
+    width: 150px; 
+    color: red;
+    font-weight: 70;
+  }
