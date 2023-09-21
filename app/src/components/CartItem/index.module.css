@@ -1,5 +1,5 @@
 .card {
-	border: 2px solid pink;
+	border: 2px solid rgb(241, 5, 41);
 	padding: 15px;
 	margin: 10px 0;
 	display: flex;
@@ -8,7 +8,7 @@
 }
 
 .card button {
-	background-color: green;
+	background-color: rgb(198, 235, 141);
 	color: white;
 	cursor: pointer;
 	padding: 10px;

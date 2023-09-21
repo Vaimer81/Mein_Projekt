@@ -28,12 +28,10 @@ export default function SingleProductPage() {
        <img src={`http://localhost:3333${image}`} alt={title} />
 		  <div>
 			  
-			  <h3>{title}</h3>
-			   <p>Price: {price}$</p>  
+		  <p>{title}</p> 
+		  <p>Price: {price}$</p>  
+        <p>Discount: {discont_price}$</p>
         <p>Description: {description}</p>
-			   
-			  
-			  <p>Discount: {discont_price}</p> 
 			  <div className={s.add_btn}
 				  
 				  onClick={() => dispatch(addToCartAction({ id:+id, title,price, image, discont_price }))}
