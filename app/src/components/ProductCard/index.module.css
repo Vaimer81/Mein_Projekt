@@ -2,20 +2,49 @@
 	position: relative;
 }
 
+.card_item:hover .add_btn {
+    visibility: visible;
+  }
+
 .card {
-	border: 1px solid black;
-	padding: 10px;
-	display: flex;
-	flex-direction: column;
-	justify-content: center;
-	align-items: center;
+	
+	/* border: 1px solid black; */
+    padding: 10px;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center
 }
 
 .card img {
-	height: 150px;
-	width: 150px;
-	object-fit: contain;
+	border-radius: 30%;   
+    height: 300px;
+    width: 300px;
+    object-fit: contain;
 }
+
+.price_info {
+    display: flex;
+    justify-content: center;
+    align-items: center;   
+    gap: 90px;
+  }
+
+  .price_info p:nth-child(1) {
+    text-align: center;
+    margin: 4px 0;      
+    color: black;
+    font-weight: 600;
+    font-size: 30px;
+    padding-left: 4px;
+  }
+
+  .price_info p:nth-child(2) {    
+    text-align: center;
+    font-weight: 600;
+    font-size: 20px;
+    color: red;
+  }
 
 .card p:last-child{
 	text-align: center;
@@ -49,13 +78,11 @@
 
 .discounted-price {
 	text-decoration: line-through; /* Перечеркивание текста */
-	color: #999; /* Цвет для перечеркнутой цены (по вашему выбору) */
+    color: #8B8B8B; /* Цвет для перечеркнутой цены (по вашему выбору) */
+    font-size: 20px;
+    font-weight: 500;
+    padding-left: 80px;
+	letter-spacing: 0.6px;
   }
 
-  .card p:nth-child(3) {
-    text-align: center;
-    margin: 4px 0;  
-    width: 150px; 
-    color: red;
-    font-weight: 70;
-  }
+ 

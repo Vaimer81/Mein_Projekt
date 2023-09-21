@@ -1,10 +1,10 @@
 .google {
-    background-color: gray;
-    padding: 4px 10px;
+    background-color: rgb(187, 187, 187);
+    padding: 4px;
     color: white;
     font-size: 25px;
   }
-.h5{
+ .h5{
 	height: 40px;
 		display: flex;
 		justify-content: center;
@@ -15,10 +15,11 @@
 		width: 100%;
 		left: 0;
 		bottom: 0;
-}
+} 
 .wrapper{
     color: #575959;
     margin: 90px 40px;
+    width: 100%;
 }
 
 .text_container{
@@ -30,6 +31,7 @@ h1{
 	color: #000;
     font-size: 40px;
     font-weight: 700;
+	margin: 30px auto;
 }
 
 .number{
@@ -45,9 +47,6 @@ h1{
     font-weight: 600;
 }
 
-.address > p:first-of-type{
-    margin-top: 25px;
-}
 
 .hours{
 	color: #000;
@@ -56,17 +55,18 @@ h1{
     font-weight: 500; 
 }
 
-.duration{
+.time{
 	color: #000;
     font-size: 24px;
     font-weight: 600;
 }
 
-.content_cont{
+.icon{
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+	margin: 20px;
 }
 
 
@@ -100,4 +100,5 @@ h1{
     
 }
 
+ 
  

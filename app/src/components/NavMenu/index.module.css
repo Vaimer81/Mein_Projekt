@@ -18,7 +18,7 @@
 }
 
 .nav_menu :first-child {            
-    margin-left: 50px;
+   
 }
 
 
@@ -39,5 +39,6 @@
 }
 
 .nav_menu :nth-child(5) {
-    margin-left:150px;
+ margin-right:70px;
+	
 }
