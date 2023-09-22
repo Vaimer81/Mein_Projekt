@@ -1,0 +1,49 @@
+.container{
+    margin: 100px 50px;
+}
+
+h1{
+    font-size: 40px;
+    font-weight: bold;
+}
+
+.title{
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.price {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+.price input {
+    width: 100px;
+    height: 2px;
+    color: #ACACAC;
+    padding: 10px;
+    border-radius: 7px; 
+}
+
+
+.sort_container{
+    margin: 50px ;
+    display: flex;
+    gap: 90px;
+}
+
+
+ 
+.sorted{
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    
+}
+
+.sorted select{
+    width: 220px;
+    height: 20px;
+    border-radius: 7px;
+}

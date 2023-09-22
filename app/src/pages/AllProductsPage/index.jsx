@@ -2,7 +2,7 @@ import React from 'react'
 import { useSelector } from 'react-redux'
 import ProductsContainer from '../../components/ProductsContainer'
 import FilterForm from '../../components/FilterForms/FilterForm'
-import SortForm from '../../components/FilterForms/SortForm'
+import SortForm from '../../components/FilterForms/SortSales'
 import DiscountForm from '../../components/FilterForms/DiscountForm'
 import FilterForms from '../../components/FilterForms'
 
