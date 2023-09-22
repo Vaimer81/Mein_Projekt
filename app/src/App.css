@@ -15,3 +15,8 @@ a {
 	text-decoration: none;
 	color: black;
 }
+
+#root {
+
+	background-image: url(../src/Media/fon5.jpg);
+  }

@@ -1,0 +1,20 @@
+/* Стиль для элемента с классом .sort */
+.discount {
+	float: left;
+	margin-top: calc(20px);
+	margin-left: 20px; /* Отрицательное значение для сдвига влево */
+	padding: 8px; /* Поля вокруг элемента */
+	border-radius: 50px; /* Закругленные углы */
+
+  }
+  
+  .discount p {
+	text-align: center;
+	font-weight: 900;
+	font-size: 20px;
+	color: #030303; /* Цвет текста */
+	
+	cursor: pointer;
+  }
+
+   

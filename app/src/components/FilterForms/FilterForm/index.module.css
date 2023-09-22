@@ -1,0 +1,24 @@
+/* Стиль для элемента с классом .sort */
+.filter {
+	float: left;
+	margin-top: calc(20px);
+	padding: 5px; /* Поля вокруг элемента */
+	border: 3px solid #000000; /* Граничная линия */
+	border-radius: 5px; /* Закругленные углы */
+	
+  }
+  
+  /* Стиль для абзацев внутри элемента .sort */
+  .filter p {
+	text-align: center;
+	font-weight: 900;
+	font-size: 25px;
+	color: #333; /* Цвет текста */
+	margin: 0; /* Удалить внешние отступы */
+	padding: 5px; /* Внутренние отступы */
+	cursor: pointer;
+  }
+   .sort a {
+	cursor: pointer;
+	background-color: aquamarine;
+   }

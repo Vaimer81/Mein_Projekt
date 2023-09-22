@@ -27,7 +27,7 @@
     display: flex;
     justify-content: center;
     align-items: center;   
-    gap: 90px;
+    gap: 20px;
   }
 
   .price_info p:nth-child(1) {
@@ -46,6 +46,7 @@
     color: red;
   }
 
+  
 .card p:last-child{
 	text-align: center;
 	margin: 4px 0;
@@ -79,11 +80,16 @@
 
 .discounted-price {
 	text-decoration: line-through; /* Перечеркивание текста */
-    color: #8B8B8B; /* Цвет для перечеркнутой цены (по вашему выбору) */
+    color: #dedede; /* Цвет для перечеркнутой цены (по вашему выбору) */
     font-size: 20px;
     font-weight: 500;
-    padding-left: 80px;
-	letter-spacing: 0.6px;
+    padding-left: 40px;
+	letter-spacing: 0.9px;
+  }
+
+  .title {
+	text-align: center;
+	font-weight: 800;
   }
 
  
