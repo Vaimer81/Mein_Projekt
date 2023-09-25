@@ -23,19 +23,17 @@ export default function SortSales() {
 
   return (
 
-	<div className={s.container}>
-	  <div className={s.sort_container}>
-	  <div className={s.price}>
-	  <form className={s.filter} onSubmit={submit}>
+	<div className={s.container}>  
+	  <form className={s.price} onSubmit={submit}>
         <p className={s.title}>Price</p>
         <input type='number' placeholder='min' name='min' />
         <input type='number' placeholder='max' name='max' />
         <button type='submit'>Filter</button>
       </form>
-	  </div>
+	 
 
 	  <div className={s.sorted}> 
-	  <p className={s.title}>Sorted</p>
+	     <p className={s.title}>Sorted</p>
           <select onChange={order}>
 		  <option value='default'>By default</option>
 				  <option value='title'>By alphabet A-Z</option>
@@ -43,7 +41,7 @@ export default function SortSales() {
                   <option value='price_desc'>By price DESC</option>
           </select>
     
-      </div>
+      
     </div>
 	 </div>
   );

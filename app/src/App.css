@@ -1,22 +1,25 @@
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-.app_container {
+	padding: 0;
+	margin: 0;
+	box-sizing: border-box; 
+	font-family: 'Montserrat', sans-serif; 
+  }
+  
+  
+  
+  #root {
+	
 	max-width: 1440px;
 	margin: 0 auto;
-
-	padding-top: 20px;
-}
-
-a {
+	
+	
+  }
+  
+  a {
 	text-decoration: none;
 	color: black;
-}
-
-#root {
-
+  } 
+  
+  html {
 	background-image: url(../src/Media/fon5.jpg);
   }

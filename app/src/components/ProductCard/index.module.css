@@ -21,6 +21,7 @@
     height: 300px;
     width: 300px;
     object-fit: contain;
+	border: 5px solid;
 }
 
 .price_info {
@@ -80,7 +81,7 @@
 
 .discounted-price {
 	text-decoration: line-through; /* Перечеркивание текста */
-    color: #dedede; /* Цвет для перечеркнутой цены (по вашему выбору) */
+    color: #ffffff; /* Цвет для перечеркнутой цены (по вашему выбору) */
     font-size: 20px;
     font-weight: 500;
     padding-left: 40px;
@@ -92,4 +93,7 @@
 	font-weight: 800;
   }
 
+ 
+  
+   
  

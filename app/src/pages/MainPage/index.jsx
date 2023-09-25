@@ -28,9 +28,10 @@ export default function MainPage() {
       <div className={s.sale_container}>
         <div className={s.image}>
           <div className={s.text}>
-                        
-            <Link to={'/sales'} className={s.links}>
-              <div className={s.sale_btn}><img src={sale_img} alt='Sale' /></div>
+		  <p>Sale</p>
+		  <p>New season</p>         
+		  <Link to={'/sales'} className={s.sale_btn}>
+               Sale
             </Link>
           </div>
 

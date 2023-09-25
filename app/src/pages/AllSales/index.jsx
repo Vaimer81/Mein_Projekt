@@ -18,10 +18,9 @@ export default function AllSales() {
 
   return (
     <div>
+		<h1>All Sales</h1>
 		<SortSales/>
-
-	
-      <ProductsContainer products={allSalesProducts} productsStyle={true}/>
+         <ProductsContainer products={allSalesProducts} productsStyle={true}/>
     </div>
   )
 }
