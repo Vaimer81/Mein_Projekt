@@ -47,7 +47,7 @@ export default function MainPage() {
             <div className={s.btn_cat}>All categories</div>
           </Link>
         </div>
-        <CategoriesContainer />
+        <CategoriesContainer limit={3} />
       </div>
 
 
