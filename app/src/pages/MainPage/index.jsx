@@ -7,8 +7,21 @@ import s from './index.module.css'
 import gnome from '../../Media/gnome.png'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllProducts } from '../../request/products_req'
-
+import {useForm} from 'react-hook-form'
 export default function MainPage() {
+	const { register, handleSubmit, formState: { errors } } = useForm({
+        mode: 'onChange'
+    });
+
+	const phoneNumberRegister = register('phoneNumber', {
+        required: "*This field is required",
+        pattern: {
+            value: /^(?:\+49|0)[1-9][0-9]*(?:[\s-]?\d+)*$/,
+            message: '*Please, enter valid phoneNumber address'
+        }
+    });
+
+	const submit = data => console.log(data);
 
   const dispatch = useDispatch()
 
@@ -57,8 +70,19 @@ export default function MainPage() {
         <div className={s.discount_descr}>
           <h1>5% off</h1>
           <h2>on the first order</h2>
-          <input type="text" className={s.phone_num_inp} placeholder='+49' />
-          <button className={s.discount_btn}>Get a discount</button>
+          <form onSubmit={handleSubmit(submit)}>
+                        <input
+                            type="text"
+                            placeholder='+49' name='phoneNumber'
+                            {...phoneNumberRegister}
+                        />
+
+                        {errors.phoneNumber && <p className={s.error_msg}>{errors.phoneNumber?.message}</p>}
+
+
+
+                        <button>Get a discount</button>
+                    </form>
         </div>
       </div>
 
