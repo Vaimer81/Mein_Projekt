@@ -26,34 +26,34 @@ export default function Cart() {
   };
 
 
-	return (
-		<div>
-			{/* <p>Cart:</p> */}
-			<div>
-			{
-				cart_state.map(el => <CartItem key={el.id} {...el} />)
-			}
-			</div>
-			<div className={s.clear_btn}
-			onClick={() => dispatch(clearCartAction())}
-			>
-			  Clear cart
-			  </div>
-			
+  return (
+    <div>
+      {/* <p>Cart:</p> */}
+      <div>
+        {cart_state.length > 0
+          ? cart_state.map((el) => <CartItem key={el.id} {...el} />)
+          : <p>Your cart is empty.</p>}
+      </div>
+      {cart_state.length > 0 && (
+        <div className={s.clear_btn} onClick={() => dispatch(clearCartAction())}>
+          Clear cart
+        </div>
+      )}
 
-			  <form onSubmit={handleSubmit} className={s.order}>
-            <p>Order details</p>
-			<p>Total: {total.toFixed(2)}$</p>
-            <input
-              type="number"
-              placeholder="Phone number"
-              name="phone"
-              value={phoneNumber}
-              onChange={(e) => setPhoneNumber(e.target.value)}
-        />
-            <button type="submit">Order</button>
-          </form>
-
-		</div>
-	  )
-	}
+      {cart_state.length > 0 && (
+        <form onSubmit={handleSubmit} className={s.order}>
+          <p>Order details</p>
+          <p>Total: {total.toFixed(2)}$</p>
+          <input
+            type="number"
+            placeholder="Phone number"
+            name="phone"
+            value={phoneNumber}
+            onChange={(e) => setPhoneNumber(e.target.value)}
+          />
+          <button type="submit">Order</button>
+        </form>
+      )}
+    </div>
+  );
+}
