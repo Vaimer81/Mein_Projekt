@@ -26,34 +26,42 @@ export default function Cart() {
   };
 
 
-  return (
+  return (    
+    <div className={s.cart_cont}>
+    <h1 className={s.title_cart}>Shopping cart</h1>
+    
     <div>
-      {/* <p>Cart:</p> */}
-      <div>
+      <div className={s.cart_cont}>       
         {cart_state.length > 0
           ? cart_state.map((el) => <CartItem key={el.id} {...el} />)
-          : <p>Your cart is empty.</p>}
+          : <h3 className={s.empty}>Your cart is empty.</h3>}
+   
+     
+       {cart_state.length > 0 && (
+        <form onSubmit={handleSubmit} className={s.order}>
+          <h2>Order details</h2>
+          <p>Total {total.toFixed(2)}$</p>
+          <div className={s.pfon_ord}>
+            <input
+              type=""
+              placeholder="Phone number"
+              name="phone"
+              value={phoneNumber}
+              onChange={(e) => setPhoneNumber(e.target.value)}
+          />
+            <button type="submit">Order</button>
+          </div>
+        </form>                
+          )}
+        </div>
       </div>
-      {cart_state.length > 0 && (
+      
+         {cart_state.length > 0 && (
         <div className={s.clear_btn} onClick={() => dispatch(clearCartAction())}>
           Clear cart
         </div>
       )}
-
-      {cart_state.length > 0 && (
-        <form onSubmit={handleSubmit} className={s.order}>
-          <p>Order details</p>
-          <p>Total: {total.toFixed(2)}$</p>
-          <input
-            type="number"
-            placeholder="Phone number"
-            name="phone"
-            value={phoneNumber}
-            onChange={(e) => setPhoneNumber(e.target.value)}
-          />
-          <button type="submit">Order</button>
-        </form>
-      )}
+      
     </div>
   );
 }

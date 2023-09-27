@@ -71,17 +71,14 @@ export default function MainPage() {
           <h1>5% off</h1>
           <h2>on the first order</h2>
           <form onSubmit={handleSubmit(submit)}>
-                        <input
-                            type="text"
-                            placeholder='+49' name='phoneNumber'
-                            {...phoneNumberRegister}
+                        <input type="text" className={s.phone_num_inp} placeholder='+49' name='phoneNumber' {...phoneNumberRegister}
                         />
 
                         {errors.phoneNumber && <p className={s.error_msg}>{errors.phoneNumber?.message}</p>}
 
 
 
-                        <button>Get a discount</button>
+                        <button className={s.discount_btn}>Get a discount</button>
                     </form>
         </div>
       </div>
