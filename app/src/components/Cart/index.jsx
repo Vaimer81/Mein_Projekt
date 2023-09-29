@@ -19,9 +19,13 @@ export default function Cart() {
 
     const handleSubmit = (e) => {
       e.preventDefault();
-      
-      // Вы можете здесь выполнить необходимые действия с номером телефона,
-      // например, отправить его на сервер для обработки.
+	  const phonePattern = /^(?:\+49|0)[1-9][0-9]*(?:[\s-]?\d+)*$/;
+
+	  if (!phonePattern.test(phoneNumber)) {
+		alert('Please, enter valid phoneNumber 01.......');
+		return;
+	  }
+    
       alert(`Заказ размещен с номером телефона: ${phoneNumber}`);
   };
 

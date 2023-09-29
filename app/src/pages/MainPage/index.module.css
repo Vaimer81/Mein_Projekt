@@ -161,3 +161,11 @@
     margin-bottom: 20px;
 }
 
+.image img{
+	position: absolute;
+	top: 50%;
+    left: 20%;
+    transform: translate(-50%, -50%);
+    z-index: 2;
+}
+

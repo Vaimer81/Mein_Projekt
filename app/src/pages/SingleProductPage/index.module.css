@@ -22,7 +22,7 @@
   }
   
   .product_item > div p:nth-child(3) {
-    color: rgb(249, 47, 47);
+    color: rgb(7, 7, 7);
     font-weight: 700;
     margin: 10px 0;
     font-size: 20px;
@@ -39,7 +39,7 @@
 
   .add_btn {
     cursor: pointer;
-    background-color: rgb(144, 238, 144);
+    background-color: rgb(247, 244, 159);
     color: green;
     border: 2px solid green;
     border-radius: 10px;

@@ -48,7 +48,7 @@ export default function ProductCard({ id, title,discont_price, image, price }) {
        className={s.add_btn}
        onClick={() => dispatch(addToCartAction({ id, title, image, price, discont_price }))}
        >
-        Add to Cart
+        Add to 🛒
         </div> 
     </div>
     

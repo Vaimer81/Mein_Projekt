@@ -5,6 +5,7 @@ import CategoriesContainer from '../../components/CategoriesContainer'
 import ProductsContainer  from '../../components/ProductsContainer'
 import s from './index.module.css'
 import gnome from '../../Media/gnome.png'
+import klass from '../../Media/klass.webp'
 import { useDispatch, useSelector } from 'react-redux'
 import { getAllProducts } from '../../request/products_req'
 import {useForm} from 'react-hook-form'
@@ -17,11 +18,13 @@ export default function MainPage() {
         required: "*This field is required",
         pattern: {
             value: /^(?:\+49|0)[1-9][0-9]*(?:[\s-]?\d+)*$/,
-            message: '*Please, enter valid phoneNumber address'
+            message: '*Please, enter valid phoneNumber'
         }
     });
-
+	
 	const submit = data => console.log(data);
+	// const submit = data => alert(`Вы получили скидку 5%: ${data.phoneNumber}`);
+
 
   const dispatch = useDispatch()
 
@@ -41,8 +44,10 @@ export default function MainPage() {
       <div className={s.sale_container}>
         <div className={s.image}>
           <div className={s.text}>
+		  <img src={klass} alt="klass" />
 		  <p>Sale</p>
-		  <p>New season</p>         
+		  <p>New season</p> 
+    
 		  <Link to={'/sales'} className={s.sale_btn}>
                Sale
             </Link>

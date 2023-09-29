@@ -1,6 +1,6 @@
 
 .card {
-    border: 2px solid rgb(255, 255, 255);
+    border: 2px solid rgb(0, 0, 0);
     width: 824px;
     padding: 15px;
     margin: 80px 0 0 30px;
@@ -76,8 +76,8 @@
   }
 
   .price_dis p:nth-child(2) {
-    text-decoration: line-through; /* Перечеркивание текста */
-    color: #ffffff; /* Цвет для перечеркнутой цены (по вашему выбору) */
+    text-decoration: line-through; 
+    color: #ffffff;
     font-size: 25px;
     font-weight: 500;
     padding-left: 2px;

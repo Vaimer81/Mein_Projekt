@@ -1,7 +1,12 @@
 import React from 'react'
+import notFound from '../../Media/ops..png'
 
 export default function NotFoundPage() {
   return (
-    <div>NotFoundPage</div>
+    <div>
+
+<img src={notFound}
+alt='NotFoundPage'/>	
+</div>
   )
 }
