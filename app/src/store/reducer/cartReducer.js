@@ -51,3 +51,11 @@ export const cartReducer = (state = [], action) => {
     return state;
   }
 };
+
+
+// счетчик товаров//
+export const selectCartItemCount = (state) => {
+	return state.cart.reduce((acc, { count }) => {
+	  return acc + count;
+	}, 0);
+  };

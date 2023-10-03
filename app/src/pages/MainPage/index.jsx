@@ -1,5 +1,4 @@
 import React, { useEffect } from 'react'
-import sale_img from '../../Media/sale_img.png'
 import { Link } from 'react-router-dom'
 import CategoriesContainer from '../../components/CategoriesContainer'
 import ProductsContainer  from '../../components/ProductsContainer'
@@ -7,10 +6,12 @@ import s from './index.module.css'
 import gnome from '../../Media/gnome.png'
 import klass from '../../Media/klass.webp'
 import { useDispatch, useSelector } from 'react-redux'
-import { getAllProducts } from '../../request/products_req'
+import { addNewProductSale, getAllProducts } from '../../request/products_req'
 import {useForm} from 'react-hook-form'
+
 export default function MainPage() {
-	const { register, handleSubmit, formState: { errors } } = useForm({
+
+	const { register, handleSubmit, reset, formState: { errors } } = useForm({
         mode: 'onChange'
     });
 
@@ -21,8 +22,12 @@ export default function MainPage() {
             message: '*Please, enter valid phoneNumber'
         }
     });
-	
-	const submit = data => console.log(data);
+
+	const submit = new_product_obj => {
+		addNewProductSale(new_product_obj);
+		reset()
+	}
+	// const submit = data => console.log(data);
 	// const submit = data => alert(`Вы получили скидку 5%: ${data.phoneNumber}`);
 
 
@@ -35,7 +40,7 @@ export default function MainPage() {
   const first_four_products = products.filter(el => el.discont_price !== null).slice(0,4)
 
   // console.log(first_four_products);
-  
+
 
   return (
     <div>

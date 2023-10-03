@@ -26,3 +26,23 @@ export const getSingleProduct = (id) => {
 }
 }
 
+export const sendOrder = new_product => {
+	fetch('http://localhost:3333/order/send', {
+	  method: 'POST',
+	  body: JSON.stringify({new_product})
+	})
+	  .then(res => res.json())
+	  .then(json => console.log(json, 'new order added'))
+  }
+
+
+  export const addNewProductSale = new_product => {
+	fetch('http://localhost:3333/sale/send', {
+	  method: 'POST',
+	  body: JSON.stringify({new_product})
+	})
+	  .then(res => res.json())
+	  .then(json => console.log(json, 'new product added'))
+  }
+
+

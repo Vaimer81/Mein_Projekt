@@ -3,6 +3,7 @@ import { useDispatch, useSelector } from 'react-redux'
 import CartItem from '../CartItem';
 import s from './index.module.css'
 import { clearCartAction } from '../../store/reducer/cartReducer';
+import { sendOrder } from '../../request/products_req';
 
 
 export default function Cart() {
@@ -26,7 +27,10 @@ export default function Cart() {
 		return;
 	  }
     
-      alert(`Заказ размещен с номером телефона: ${phoneNumber}`);
+    //   
+	
+	sendOrder()
+	e.target.reset()
   };
 
 
@@ -47,7 +51,7 @@ export default function Cart() {
           <p>Total {total.toFixed(2)}$</p>
           <div className={s.pfon_ord}>
             <input
-              type=""
+              type="number"
               placeholder="Phone number"
               name="phone"
               value={phoneNumber}
