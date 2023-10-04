@@ -36,7 +36,8 @@ export default function MainPage() {
   useEffect(() => { dispatch(getAllProducts) }, [dispatch])
 
 //   ----------------------------------------------------
-  const products = useSelector(state => state.allProducts)
+  const allProducts = useSelector(state => state.allProducts)
+  const products = allProducts.filter(el => el.discont_price)
 
   const get_random_products = () => {
     const first_four_products = [...products].sort(() => Math.random() - 0.5);
