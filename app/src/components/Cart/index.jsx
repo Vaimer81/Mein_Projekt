@@ -9,12 +9,13 @@ import { sendOrder } from '../../request/products_req';
 export default function Cart() {
 
   const cart_state = useSelector(state => state.cart);
-
+  
   const dispatch = useDispatch();
 
   const total = cart_state.reduce((acc, { price, discont_price, count }) => {
 	const totalPrice = discont_price ? discont_price : price  
 	return acc + totalPrice * count} , 0)
+
 
 	const [phoneNumber, setPhoneNumber] = useState('');
 

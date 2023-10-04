@@ -35,10 +35,16 @@ export default function MainPage() {
 
   useEffect(() => { dispatch(getAllProducts) }, [dispatch])
 
+//   ----------------------------------------------------
   const products = useSelector(state => state.allProducts)
 
-  const first_four_products = products.filter(el => el.discont_price !== null).slice(0,4)
-
+  const get_random_products = () => {
+    const first_four_products = [...products].sort(() => Math.random() - 0.5);
+    return first_four_products.slice(0, 4)
+	
+  } 
+  const random_products = get_random_products();
+// -----------------------------------------------
   // console.log(first_four_products);
 
 
@@ -99,7 +105,7 @@ export default function MainPage() {
         <h3>Sale</h3>
         <div>
 
-          <ProductsContainer products={first_four_products} productsStyle={true}/>         
+		<ProductsContainer products={random_products} category_show={false} />     
 
         </div>
       </div>
