@@ -31,8 +31,8 @@ export default function AllProductsSort() {
 	<div className={s.container}>		   
 	      <form className={s.price} onSubmit={submit}>
             <p className={s.title}>Price</p>
-            <input type='' placeholder='min' name='min' />
-            <input type='' placeholder='max' name='max' />
+            <input type='number' placeholder='min' name='min' />
+            <input type='number' placeholder='max' name='max' />
             <button type='submit'>Filter</button>
           </form>
 	    
