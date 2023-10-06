@@ -34,14 +34,7 @@ export default function ProductCard({ id, title,discont_price, image, price }) {
           
 
         <p className={s.title}>{ title }</p>  
-          {/* <p>{ price }$</p>
-          <p>Discount: { discont_price }$</p>   */}
-          {/* {
-          category_show 
-          ? <p>Category: {category}</p> 
-          : ''
-      }   */
-         }      
+              
         
       </Link> 
       <div
