@@ -25,12 +25,14 @@ export default function Cart() {
 
     const handleSubmit = (e) => {
       e.preventDefault();
-	  const phonePattern = /^(?:\+49|0)[1-9][0-9]*(?:[\s-]?\d+)*$/;
+	  const phonePattern = /^(?:\+49|0)[1-9][0-9]*$/
 
-	  if (!phonePattern.test(phoneNumber)) {
-		alert('Please, enter valid phoneNumber 01.......');
-		return;
-	  }
+
+	  console.log(phoneNumber);
+if (phonePattern.test(phoneNumber)) {
+  alert('Your order is being prepared for shipment');
+  return;
+}
     
     //   
 	
