@@ -62,8 +62,8 @@
 }
 
 .btn_cat{
-    width: 320px;
-    height: 55px;
+    width: 360px;
+    height: 95px;
     background-size: cover;
     border: none;
 	color: rgb(252, 252, 252);
@@ -75,6 +75,7 @@
     letter-spacing: -1.9px;
 	margin-left: 30px;
 	text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
+	
 }
 
 
@@ -164,13 +165,15 @@
 }
 
 .gen_sale_container h3{
-    color: #575959;
+	color: #ffffff;
     font-size: 40px;
     font-weight: bold;
     margin-bottom: 20px;
+	text-shadow: -2px -2px 0 black, 2px -2px 0 black, -2px 2px 0 black, 2px 2px 0 black;
 }
 
 .image img{
+	object-fit:contain;
 	position: absolute;
 	top: 50%;
     left: 20%;

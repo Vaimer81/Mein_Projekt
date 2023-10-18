@@ -17,6 +17,11 @@
     width: 300px;       
   }
 
+  .discr_cont p{
+font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif; 
+font-size: 20px;
+  }
+
   .inc_dic {
     display: flex; 
     margin-top: 70px;
